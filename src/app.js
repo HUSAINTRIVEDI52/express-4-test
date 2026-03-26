@@ -48,4 +48,8 @@ app.delete('/api/tasks/:id', (req, res) => {
   res.status(204).send();
 });
 
+app.get('/', (req, res) => {
+  res.send('OK');
+});
+
 module.exports = app;
